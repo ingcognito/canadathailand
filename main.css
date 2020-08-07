@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-<title>Canada Thailand</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,6 +8,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 .w3-tag, .fa {cursor:pointer}
 .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
 </style>
+
 <body>
 
 <!-- Links (sit on top) -->
@@ -34,36 +30,33 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 </div>
 
 <!-- Content -->
-<div class="w3-content" style="max-width: width 1400px;margin-top:80px;margin-bottom:80px">
+<div class="w3-content" style="max-width:1500px;margin-top:80px;margin-bottom:80px">
+
   <div class="w3-panel">
-    <h1><b>Canada Thailand Service Company</b>  <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2019/240/iconmonstr-customer-1.png" style="width: 7%;</h1>
-    <br>
+    <h1><b>Canada Thailand Service Company</b></h1> <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2019/240/iconmonstr-customer-1.png" style="width:100%">
     <h2>We Specialize in Canada and Thailand Immigration</h>
   </div>
 
   <!-- Slideshow -->
   <div class="w3-container">
     <div class="w3-display-container mySlides">
-      <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%">
+      <img src="https://images.pexels.com/photos/756790/pexels-photo-756790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
       <div class="w3-display-topleft w3-container w3-padding-32">
         <span class="w3-green w3-padding-large w3-animate-bottom">Canada</span>
       </div>
     </div>
-
     <div class="w3-display-container mySlides">
       <img src="https://images.pexels.com/photos/2916828/pexels-photo-2916828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
       <div class="w3-display-topleft w3-container w3-padding-32">
         <span class="w3-green w3-padding-large w3-animate-bottom">Canada</span>
       </div>
     </div>
-
     <div class="w3-display-container mySlides">
       <img src="https://images.pexels.com/photos/2797526/pexels-photo-2797526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
         <span class="w3-white w3-padding-large w3-animate-bottom">Thailand</span>
       </div>
     </div>
-
  	<div class="w3-display-container mySlides">
       <img src="https://images.pexels.com/photos/3732494/pexels-photo-3732494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
@@ -83,49 +76,37 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
         <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
       </div>
     </div>
-  </div>
-  
+  </div>  
 <br>
+  </style>
+  <body>
+      
 <!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
 <div class="w3-row"><br>
 <div class="w3-quarter">
   <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-  <p>Current Date & Time </p>
-  <p> UTC+7 hours</p>
-  <script>  
-    function displayDate() {
-      document.getElementById("showDate").innerHTML = Date();
-    }
-    </script> 
-<body>
-  <button type="button" onclick="displayDate()">Show Date</button>
-  <p id="showDate"></p>
-</body>
+  <p>Date & Time Canada</p>
+  <p>Fixer jihjfjkjfkhdhofivl</p>
+  <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
+  <p>Fixer jihjfjkjfkhdhofivl</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="https://images.pexels.com/photos/295884/pexels-photo-295884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+  <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
  
 </div>
 
 <div class="w3-quarter">
   <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-  <p>Current Date & Time </p>
-  <p> UTC-4 hours</p>
-  <script>  
-    function displayDate() {
-      document.getElementById("showDate").innerHTML = Date();
-    }
-    </script> 
- <body>
-  <button type="button" onclick="displayDate()">Show Date</button>
-  <p id="showDate"></p>
-</body>
+  <p>Date & Time Canada</p>
+  <p>Fixer jihjfjkjfkhdhofivl</p>
+  <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
+  <p>Fixer jihjfjkjfkhdhofivl</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="https://images.pexels.com/photos/355915/pexels-photo-355915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+  <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
 
 </div>
 <!-- Team Container -->
@@ -133,22 +114,27 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 <div class="w3-row"><br>
 <div class="w3-quarter">
   <h4><b>Currency in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-  <p>Baht</p>
+  <p>Date & Time Canada</p>
+  <p>Fixer jihjfjkjfkhdhofivl</p>
+  <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
+  <p>Fixer jihjfjkjfkhdhofivl</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="https://www.investasian.com/wp-content/uploads/2017/06/Best-Currency-in-Asia-It%E2%80%99s-Not-What-You-Think-1-1080x640.jpg" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+  <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
  
 </div>
 
 <div class="w3-quarter">
   <h4><b>Currency in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-  <p>Canadian Dollar</p>
-  
+  <p>Date & Time Canada</p>
+  <p>Fixer jihjfjkjfkhdhofivl</p>
+  <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
+  <p>Fixer jihjfjkjfkhdhofivl</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="https://responsive.fxempire.com/width/600/webp-lossy-70.q50/_fxempire_/2018/08/Canadian-Dollar-Notes-1-2.jpg" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+  <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
 
 </div>
 <br>
@@ -295,73 +281,42 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
       </div>
       <br>
 
-    <!-- Contact -->
-    <div class="center-padding-62" id="contact">
-      <h1 style="color:white;">Hello World</h1>
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
-    </div>
-  <br>
-    <form class="w3-container" action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Subject</label>
-        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-black">Send</button>
-    </form>
+  <!-- Contact -->
+  <div class="center-padding-62" id="contact">
+    <h1 style="color:white;">Hello World</h1>
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
   </div>
-  <br>
-  
-  <!-- Footer -->
-  
-  <footer class="w3-container w3-padding-56 w3-light-grey w3-center">
-    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
+<br>
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
     </div>
-  </footer>
-  
-<script>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+  </form>
+</div>
+<br>
 
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demodots");
-    if (n > x.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" w3-white", "");
-    }
-    x[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " w3-white";
-  }
-  </script>
-      </html>
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-56 w3-light-grey w3-center">
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
