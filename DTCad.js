@@ -6,6 +6,3 @@ function calcTime(city, offset) {
     document.getElementById("showDateCanada").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
 }
 </script> 
-<body>
-<button type="button" onclick="calcTime('Canada','-4')">Show Date</button>
-<p id="showDateCanada"></p>
