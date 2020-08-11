@@ -94,13 +94,16 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <p>Current Date & Time </p>
   <p> UTC+7 hours</p>
   <script>  
-    function displayDate() {
-      document.getElementById("showDate").innerHTML = Date();
-    }
+	function calcTime(city, offset) {
+	    d = new Date();
+	    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+	    nd = new Date(utc + (3600000*offset));
+	    document.getElementById("showDateThailand").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+	}
     </script> 
 <body>
-  <button type="button" onclick="displayDate()">Show Date</button>
-  <p id="showDate"></p>
+  <button type="button" onclick="calcTime('Thailand','7')">Show Date</button>
+  <p id="showDateThailand"></p>
 </body>
 </div>
 
@@ -114,13 +117,16 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <p>Current Date & Time </p>
   <p> UTC-4 hours</p>
   <script>  
-    function displayDate() {
-      document.getElementById("showDate").innerHTML = Date();
-    }
+	function calcTime(city, offset) {
+	    d = new Date();
+	    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+	    nd = new Date(utc + (3600000*offset));
+	    document.getElementById("showDateCanada").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+	}
     </script> 
  <body>
-  <button type="button" onclick="displayDate()">Show Date</button>
-  <p id="showDate"></p>
+  <button type="button" onclick="calcTime('Canada','-4')">Show Date</button>
+  <p id="showDateCanada"></p>
 </body>
 </div>
 
