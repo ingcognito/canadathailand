@@ -89,17 +89,20 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 <div class="w3-container w3-padding-64 w3-center" id="team">
 <div class="w3-row"><br>
 <div class="w3-quarter">
-  <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+<h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
   <p>Current Date & Time </p>
   <p> UTC+7 hours</p>
   <script>  
-    function displayDate() {
-      document.getElementById("showDate").innerHTML = Date();
-    }
-    </script> 
+function calTime(city, offset) {
+    d = new Date();
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    nd = new Date(utc + (3600000*offset));
+    document.getElementById("showDateThailand").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+}
+</script> 
 <body>
-  <button type="button" onclick="displayDate()">Show Date</button>
-  <p id="showDate"></p>
+      <button type="button" onclick="calTime('Thailand','+7')">Show Date</button>
+      <p id="showDateThailand"></p>
 </body>
 </div>
 
@@ -112,18 +115,17 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
   <p>Current Date & Time </p>
   <p> UTC-4 hours</p>
-  <script>   
-function calcTime(city, offset) {
-    d = new Date();
-    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-    nd = new Date(utc + (3600000*offset));
-    return "The local time in " + city + " is " + nd.toLocaleString();
-    document.getElementById("new Date").innerHTML = "(calcTime('Canada', '-4'))";
-}
-</script>
- <body>
-  <button type="button" onclick="alert(calcTime('Canada', '-4'))">Show Date</button>
-  <p id="showDate"></p>
+<script>  
+        function calcTime(city, offset) {
+            d = new Date();
+            utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            nd = new Date(utc + (3600000*offset));
+            document.getElementById("showDateCanada").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+        }
+        </script> 
+     <body>
+      <button type="button" onclick="calcTime('Canada','-4')">Show Date</button>
+      <p id="showDateCanada"></p>
 </body>
 </div>
 
@@ -153,17 +155,18 @@ function calcTime(city, offset) {
 <div class="w3-quarter">
   <img src="https://responsive.fxempire.com/width/600/webp-lossy-70.q50/_fxempire_/2018/08/Canadian-Dollar-Notes-1-2.jpg" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
 
-</div>
-<br>
+ </div>
+ <br>
 
+<!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
-  <div class="w3-row"><br>
-  <div class="w3-quarter">
+<div class="w3-row"><br>
+<div class="w3-quarter">
     <h4><b>Weather in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-    <p>Date & Time Canada</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-    <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
+    <p>There are 3 seasons</p>
+    <p>Summer</p>
+    <p>Rainy Season</p>
+    <p>Winter</p>
   </div>
   
   <div class="w3-quarter">
@@ -173,26 +176,27 @@ function calcTime(city, offset) {
   
   <div class="w3-quarter">
     <h4><b>Weather in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-    <p>Date & Time Canada</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-    <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
+    <p>There are 4 seasons</p>
+    <p>Summer</p>
+    <p>Autumn</p>
+    <p>Winter</p>
+    <p>Spring</p>
   </div>
-  
-  <div class="w3-quarter">
+<div class="w3-quarter">
     <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
   
   </div>
   <br>
 
+<!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
 <div class="w3-row"><br>
 <div class="w3-quarter">
-  <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-  <p>Date & Time Canada</p>
-  <p>Fixer jihjfjkjfkhdhofivl</p>
-  <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-  <p>Fixer jihjfjkjfkhdhofivl</p>
+  <h4><b>Politics in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>Prime Minister</p>
+  <p>Constitutional Monarch</p>
+  <p>Democracy</p>
+  
 </div>
 
 <div class="w3-quarter">
@@ -201,11 +205,10 @@ function calcTime(city, offset) {
 </div>
 
 <div class="w3-quarter">
-  <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-  <p>Date & Time Canada</p>
-  <p>Fixer jihjfjkjfkhdhofivl</p>
-  <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-  <p>Fixer jihjfjkjfkhdhofivl</p>
+  <h4><b>Politics in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>Prime Minister</p>
+  <p>Full Democracy</p>
+  
 </div>
 
 <div class="w3-quarter">
@@ -214,14 +217,15 @@ function calcTime(city, offset) {
 </div>
 <br>
 
+<!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
-  <div class="w3-row"><br>
-  <div class="w3-quarter">
-    <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-    <p>Date & Time Canada</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-    <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
+<div class="w3-row"><br>
+<div class="w3-quarter">
+    <h4><b>Population in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+    <p>Over 69 million people</p>
+ <button onclick="window.location.href='https://worldpopulationreview.com/countries/thailand-population';">
+      Click Here
+    </button>
   </div>
   
   <div class="w3-quarter">
@@ -230,11 +234,11 @@ function calcTime(city, offset) {
   </div>
   
  <div class="w3-quarter">
-    <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-    <p>Date & Time Canada</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-    <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
+     <h4><b>Population in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+    <p>Over 37 million people</p>
+ <button onclick="window.location.href='https://worldpopulationreview.com/countries/canada-population';">
+      Click Here
+    </button>
   </div>
   
   <div class="w3-quarter">
@@ -242,66 +246,115 @@ function calcTime(city, offset) {
   
   </div>
   <br>
-  <div class="w3-container w3-padding-64 w3-center" id="team">
-  <div class="w3-row"><br>
-  <div class="w3-quarter">
-    <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-    <p>Date & Time Canada</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-    <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-  </div>
-    
-  <div class="w3-quarter">
+ 
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<div class="w3-row"><br>
+<div class="w3-quarter">
+  <h4><b>Average Age in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>Prime Minister</p>
+  <p>Constitutional Monarch</p>
+  <p>Democracy</p>
+  
+</div>
+
+<div class="w3-quarter">
   <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
 </div>
-    
-<div class="w3-quarter">
-<h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-<p>Date & Time Canada</p>
-<p>Fixer jihjfjkjfkhdhofivl</p>
-<p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-<p>Fixer jihjfjkjfkhdhofivl</p>
-</div>
-    
-    <div class="w3-quarter">
-      <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
-    
-    </div>
-    <br>
-    <div class="w3-container w3-padding-64 w3-center" id="team">
-      <div class="w3-row"><br>
-      <div class="w3-quarter">
-        <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-        <p>Date & Time Canada</p>
-        <p>Fixer jihjfjkjfkhdhofivl</p>
-        <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-        <p>Fixer jihjfjkjfkhdhofivl</p>
-      </div>
-      
-      <div class="w3-quarter">
-        <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
-       
-      </div>
-      
-      <div class="w3-quarter">
-        <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-        <p>Date & Time Canada</p>
-        <p>Fixer jihjfjkjfkhdhofivl</p>
-        <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-        <p>Fixer jihjfjkjfkhdhofivl</p>
-      </div>
-      
-      <div class="w3-quarter">
-        <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
-      
-      </div>
-      <br>
 
-    <!-- Contact -->
-    <div class="center-padding-62" id="contact">
-      <h1 style="color:white;">Hello World</h1>
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+<div class="w3-quarter">
+  <h4><b>Average Age in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>Prime Minister</p>
+  <p>Full Democracy</p> 
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+
+<br>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<div class="w3-row"><br>
+<div class="w3-quarter">
+  <h4><b>Religion in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>Prime Minister</p>
+  <p>Constitutional Monarch</p>
+  <p>Democracy</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+
+<div class="w3-quarter">
+  <h4><b>Religion in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>Prime Minister</p>
+  <p>Full Democracy</p> 
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+
+<br>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<div class="w3-row"><br>
+<div class="w3-quarter">
+<h4><b>Holidays in Thailand</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+<p>Prime Minister</p>
+<p>Constitutional Monarch</p>
+<p>Democracy</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?"width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+
+<div class="w3-quarter">
+  <h4><b>Holidays in Canada</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>Prime Minister</p>
+  <p>Full Democracy</p> 
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?"width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+<br>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<div class="w3-row"><br>
+<div class="w3-quarter">
+<h4><b>Sizes in Thailand</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+<p>Prime Minister</p>
+<p>Constitutional Monarch</p>
+<p>Democracy</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?"width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+
+<div class="w3-quarter">
+  <h4><b>Sizes in Canada</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>Prime Minister</p>
+  <p>Full Democracy</p> 
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?"width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+
+<br>
+
+<!-- Contact -->
+<div class="center-padding-62" id="contact">
+<h1 style="color:white;">Hello World</h1>
+<span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
     </div>
   <br>
     <form class="w3-container" action="/action_page.php" target="_blank">
