@@ -131,12 +131,78 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
       <img src="https://images.pexels.com/photos/355915/pexels-photo-355915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
       </div>
     </div>
-    
     </body>
     </div>
-    
-</body>
-</div>
+    <br>
+   
+    <!-- Contact -->
+    <div class="center-padding-62" id="contact">
+      <h1 style="color:white;">Hello World</h1>
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+    </div>
+  <br>
+    <form class="w3-container" action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Subject</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-black">Send</button>
+    </form>
+  </div>
+  <br>
+  
+  <!-- Footer -->
+  
+  <footer class="w3-container w3-padding-56 w3-light-grey w3-center">
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </footer>
+  
+<script>
 
-</body>
-</html>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demodots");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-white";
+  }
+  </script>
+      </html>
+

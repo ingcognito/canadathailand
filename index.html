@@ -84,31 +84,35 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
       </div>
     </div>
   </div>
-  
-<br>
 <!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
-<div class="w3-row"><br>
+  <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-half">
+      <div class="w3-card w3-container" style="min-height:460px">
+<div class="w3-row">
 <div class="w3-quarter">
   <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
   <p>Current Date & Time </p>
   <p> UTC+7 hours</p>
   <script>  
-    function displayDate() {
-      document.getElementById("showDate").innerHTML = Date();
+    function calTime(city, offset) {
+        d = new Date();
+        utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+        nd = new Date(utc + (3600000*offset));
+        document.getElementById("showDateThailand").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
     }
     </script> 
-<body>
-  <button type="button" onclick="displayDate()">Show Date</button>
-  <p id="showDate"></p>
-</body>
-</div>
-
+ <body>
+  <button type="button" onclick="calTime('Thailand','+7')">Show Date</button>
+  <p id="showDateThailand"></p>
 <div class="w3-quarter">
   <img src="https://images.pexels.com/photos/295884/pexels-photo-295884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
- 
 </div>
-
+<div class="w3-container w3-padding-64 w3-center" id="team">
+  <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-half">
+      <div class="w3-card w3-container" style="min-height:460px">
+<div class="w3-row">
 <div class="w3-quarter">
   <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
   <p>Current Date & Time </p>
@@ -123,7 +127,6 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <p id="showDate"></p>
 </body>
 </div>
-
 <div class="w3-quarter">
   <img src="https://images.pexels.com/photos/355915/pexels-photo-355915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
 
