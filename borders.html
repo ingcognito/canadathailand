@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<title>Canada Thailand</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#plans" class="w3-button w3-block">Plans</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">About</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width: width 1400px;margin-top:80px;margin-bottom:80px">
+  <div class="w3-panel">
+    <h1><b>Canada Thailand Service Company</b>  <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2019/240/iconmonstr-customer-1.png" style="width: 7%;</h1>
+    <br>
+    <h2>We Specialize in Canada and Thailand Immigration</h>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-green w3-padding-large w3-animate-bottom">Canada</span>
+      </div>
+    </div>
+
+    <div class="w3-display-container mySlides">
+      <img src="https://images.pexels.com/photos/2916828/pexels-photo-2916828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-green w3-padding-large w3-animate-bottom">Canada</span>
+      </div>
+    </div>
+
+    <div class="w3-display-container mySlides">
+      <img src="https://images.pexels.com/photos/2797526/pexels-photo-2797526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Thailand</span>
+      </div>
+    </div>
+
+ 	<div class="w3-display-container mySlides">
+      <img src="https://images.pexels.com/photos/3732494/pexels-photo-3732494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Thailand</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-half">
+      <div class="w3-card w3-container" style="min-height:460px">
+      <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+      <p>Current Date & Time </p>
+      <p> UTC+7 hours</p>
+      <script>  
+        function calTime(city, offset) {
+            d = new Date();
+            utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            nd = new Date(utc + (3600000*offset));
+            document.getElementById("showDateThailand").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+        }
+        </script> 
+     <body>
+      <button type="button" onclick="calTime('Thailand','+7')">Show Date</button>
+      <p id="showDateThailand"></p>
+      
+    <div class="w3-quarter">
+      <img src="https://images.pexels.com/photos/355915/pexels-photo-355915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+    </div>
+    
+      </div>
+    </div>
+    
+    <div class="w3-half">
+      <div class="w3-card w3-container" style="min-height:460px">
+      <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+      <p>Current Date & Time </p>
+      <p> UTC-4 hours</p>
+      <script>  
+        function calcTime(city, offset) {
+            d = new Date();
+            utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            nd = new Date(utc + (3600000*offset));
+            document.getElementById("showDateCanada").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+        }
+        </script> 
+     <body>
+      <button type="button" onclick="calcTime('Canada','-4')">Show Date</button>
+      <p id="showDateCanada"></p>
+      
+    <div class="w3-half">
+      <img src="https://images.pexels.com/photos/355915/pexels-photo-355915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+      </div>
+    </div>
+    
+    </body>
+    </div>
+    
+</body>
+</div>
+
+</body>
+</html>
