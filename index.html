@@ -40,7 +40,6 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     <br>
     <h2>We Specialize in Canada and Thailand Immigration</h>
   </div>
-
   <!-- Slideshow -->
   <div class="w3-container">
     <div class="w3-display-container mySlides">
@@ -90,17 +89,20 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 <div class="w3-container w3-padding-64 w3-center" id="team">
 <div class="w3-row"><br>
 <div class="w3-quarter">
-  <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+<h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
   <p>Current Date & Time </p>
   <p> UTC+7 hours</p>
   <script>  
-    function displayDate() {
-      document.getElementById("showDate").innerHTML = Date();
-    }
-    </script> 
+function calTime(city, offset) {
+    d = new Date();
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    nd = new Date(utc + (3600000*offset));
+    document.getElementById("showDateThailand").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+}
+</script> 
 <body>
-  <button type="button" onclick="displayDate()">Show Date</button>
-  <p id="showDate"></p>
+      <button type="button" onclick="calTime('Thailand','+7')">Show Date</button>
+      <p id="showDateThailand"></p>
 </body>
 </div>
 
@@ -113,14 +115,17 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
   <p>Current Date & Time </p>
   <p> UTC-4 hours</p>
-  <script>  
-    function displayDate() {
-      document.getElementById("showDate").innerHTML = Date();
-    }
-    </script> 
- <body>
-  <button type="button" onclick="displayDate()">Show Date</button>
-  <p id="showDate"></p>
+<script>  
+        function calcTime(city, offset) {
+            d = new Date();
+            utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            nd = new Date(utc + (3600000*offset));
+            document.getElementById("showDateCanada").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+        }
+        </script> 
+     <body>
+      <button type="button" onclick="calcTime('Canada','-4')">Show Date</button>
+      <p id="showDateCanada"></p>
 </body>
 </div>
 
@@ -150,150 +155,437 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 <div class="w3-quarter">
   <img src="https://responsive.fxempire.com/width/600/webp-lossy-70.q50/_fxempire_/2018/08/Canadian-Dollar-Notes-1-2.jpg" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
 
-</div>
-<br>
+ </div>
+ <br>
 
+<!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
-  <div class="w3-row"><br>
-  <div class="w3-quarter">
+<div class="w3-row"><br>
+<div class="w3-quarter">
     <h4><b>Weather in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-    <p>Date & Time Canada</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-    <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
+    <p>There are 3 seasons</p>
+    <p>Summer</p>
+    <p>Rainy Season</p>
+    <p>Winter</p>
   </div>
   
   <div class="w3-quarter">
-    <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+    <img src="https://images.pexels.com/photos/2070485/pexels-photo-2070485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
    
   </div>
   
   <div class="w3-quarter">
     <h4><b>Weather in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-    <p>Date & Time Canada</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-    <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
+    <p>There are 4 seasons</p>
+    <p>Summer</p>
+    <p>Autumn</p>
+    <p>Winter</p>
+    <p>Spring</p>
   </div>
-  
-  <div class="w3-quarter">
-    <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+<div class="w3-quarter">
+    <img src="https://images.pexels.com/photos/877864/pexels-photo-877864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
   
   </div>
   <br>
 
+<!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
 <div class="w3-row"><br>
 <div class="w3-quarter">
-  <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-  <p>Date & Time Canada</p>
-  <p>Fixer jihjfjkjfkhdhofivl</p>
-  <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-  <p>Fixer jihjfjkjfkhdhofivl</p>
+  <h4><b>Politics in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>Constitutional Monarch and Democracy</p>
+  <style>
+    .buttonP {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #eb5114;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonP:hover {background-color: #da5315}
+    
+    .buttonP:active {
+      background-color: #e95713;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>  
+    <button class="buttonP" onclick="window.location.href='https://en.wikipedia.org/wiki/Politics_of_Thailand';">
+        Click Here 
+ </body>
+  
 </div>
 
 <div class="w3-quarter">
-  <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+  <img src="https://image.freepik.com/free-photo/democracy-monument-bangkok-thailand_35071-1537.jpg" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
  
 </div>
 
 <div class="w3-quarter">
-  <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-  <p>Date & Time Canada</p>
-  <p>Fixer jihjfjkjfkhdhofivl</p>
-  <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-  <p>Fixer jihjfjkjfkhdhofivl</p>
+  <h4><b>Politics in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>Full Democracy</p>
+  <style>
+    .buttonP {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #eb5114;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonP:hover {background-color: #da5315}
+    
+    .buttonP:active {
+      background-color: #e95713;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>  
+    <button class="buttonP" onclick="window.location.href='https://en.wikipedia.org/wiki/Politics_of_Canada';">
+        Click Here 
 </div>
 
 <div class="w3-quarter">
-  <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+  <img src="https://images.unsplash.com/photo-1530025809667-1f4bcff8e60f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1240&q=80" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
 
 </div>
 <br>
 
+<!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
-  <div class="w3-row"><br>
-  <div class="w3-quarter">
-    <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-    <p>Date & Time Canada</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-    <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
+<div class="w3-row"><br>
+<div class="w3-quarter">
+    <h4><b>Population in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+    <p>Over 69 million people</p>
+    <style>
+    .buttonPop {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #3bbecf;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonPop:hover {background-color: #39b9f5}
+    
+    .buttonPop:active {
+      background-color: #40b4e9;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>  
+    <button class="buttonPop" onclick="window.location.href='https://worldpopulationreview.com/countries/thailand-population';">
+        Click Here
+    </button>
   </div>
   
   <div class="w3-quarter">
-    <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+    <img src="https://images.unsplash.com/photo-1510378460657-29ba58956b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
    
   </div>
   
  <div class="w3-quarter">
-    <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-    <p>Date & Time Canada</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-    <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
+     <h4><b>Population in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+    <p>Over 37 million people</p>
+    <style>
+      .buttonPop {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #3bbecf;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+      
+      .buttonPop:hover {background-color: #39b9f5}
+      
+      .buttonPop:active {
+        background-color: #40b4e9;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      </style>
+      </head>
+      <body>  
+      <button class="buttonPop" onclick="window.location.href='https://worldpopulationreview.com/countries/canada-population';">
+          Click Here
+    </button>
   </div>
   
   <div class="w3-quarter">
-    <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+    <img src="https://images.pexels.com/photos/2354225/pexels-photo-2354225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
   
   </div>
   <br>
-  <div class="w3-container w3-padding-64 w3-center" id="team">
-  <div class="w3-row"><br>
-  <div class="w3-quarter">
-    <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-    <p>Date & Time Canada</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-    <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-    <p>Fixer jihjfjkjfkhdhofivl</p>
-  </div>
-    
-  <div class="w3-quarter">
-  <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
-</div>
-    
+ 
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<div class="w3-row"><br>
 <div class="w3-quarter">
-<h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-<p>Date & Time Canada</p>
-<p>Fixer jihjfjkjfkhdhofivl</p>
-<p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-<p>Fixer jihjfjkjfkhdhofivl</p>
+  <h4><b>Average Age in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>About 38.1 years</p>
+  <style>
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .button:hover {background-color: #3e8e41}
+    
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>  
+    <button class="button" onclick="window.location.href='https://www.indexmundi.com/thailand/demographics_profile.html';">
+        Click Here
+    </body>
+  </button>
+  
 </div>
+
+<div class="w3-quarter">
+  <img src="https://images.unsplash.com/photo-1510382960960-be18f0334b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=925&q=80" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+
+<div class="w3-quarter">
+  <h4><b>Average Age in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>About 42.4 years</p>
+  <style>
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
     
+    .button:hover {background-color: #3e8e41}
+    
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>  
+    <button class="button" onclick="window.location.href='https://www.indexmundi.com/canada/demographics_profile.html';">
+        Click Here
+    </body>
+  </button>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.unsplash.com/photo-1562364692-16836a8b9b08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+
+<br>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<div class="w3-row"><br>
+<div class="w3-quarter">
+  <h4><b>Religion in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>The most is Buddhism</p>
+  <style>
+.buttonR {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #787af8;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonR:hover {background-color: #6c57e6}
+    
+    .buttonR:active {
+      background-color: #6f66c0ea;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>  
+    <button class="buttonR" onclick="window.location.href='https://en.wikipedia.org/wiki/Religion_in_Thailand';">
+        Click Here 
+  </button>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/3393546/pexels-photo-3393546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+
+<div class="w3-quarter">
+  <h4><b>Religion in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
+  <p>The most is Christianity</p>
+  <style>
+    .buttonR {
+          display: inline-block;
+          padding: 10px 15px;
+          font-size: 16px;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: #787af8;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 9px #999;
+        }
+        
+        .buttonR:hover {background-color: #6c57e6}
+        
+        .buttonR:active {
+          background-color: #6f66c0ea;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+        </style>
+        </head>
+        <body>  
+        <button class="buttonR" onclick="window.location.href='https://en.wikipedia.org/wiki/Religion_in_Canada';">
+            Click Here 
+  </button>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/161281/cross-christian-religion-church-161281.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+<br>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<div class="w3-row"><br>
+<div class="w3-quarter">
+<h4><b>Holidays in Thailand</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+<button onclick="window.location.href='https://www.officeholidays.com/countries/thailand/2020';">
+    Click Here
+  </button>
+</div>
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/3183613/pexels-photo-3183613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+<div class="w3-quarter">
+  <h4><b>Holidays in Canada</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+    <button onclick="window.location.href='https://www.officeholidays.com/countries/canada';">
+        Click Here
+</div>
+<div class="w3-quarter">
+  <img src="https://images.pexels.com/photos/756790/pexels-photo-756790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+<br>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<div class="w3-row"><br>
+<div class="w3-quarter">
+<h4><b>Sizes in Thailand</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+<p>Total 198,120 sq mi</p>
+<button onclick="window.location.href='https://en.wikipedia.org/wiki/Geography_of_Thailand#Area';">
+    Click Here
+</div>
+<div class="w3-quarter">
+  <img src="https://maps-thailand-th.com/img/0/map-of-thailand-area.jpg"width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+<div class="w3-quarter">
+  <h4><b>Sizes in Canada</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+    <p>Total 3,855,103 sq mi</p>
+    <p>The second biggest country in the world</p>
+    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Geography_of_Canada';">
+        Click Here
+</div>
+<div class="w3-quarter">
+  <img src="http://ontheworldmap.com/canada/canada-road-map.jpg"width="194" height="196" class="w3-circle w3-hover-opacity">
+</div>
+<br>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+    <div class="w3-row"><br>
     <div class="w3-quarter">
-      <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
-    
+      <h4><b>Agriculture in Thailand</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+      <p>The most is Buddhism</p>
+      <button onclick="window.location.href='https://en.wikipedia.org/wiki/Religion_in_Thailand';">
+        Click Here
+      </button>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://images.pexels.com/photos/246935/pexels-photo-246935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+    </div>
+    <div class="w3-quarter">
+      <h4><b>Agriculture in Canada</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+      <p>Christianity</p>
+      <button onclick="window.location.href='https://en.wikipedia.org/wiki/Religion_in_Canada';">
+        Click Here
+      </button>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://images.pexels.com/photos/161281/cross-christian-religion-church-161281.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
     </div>
     <br>
-    <div class="w3-container w3-padding-64 w3-center" id="team">
-      <div class="w3-row"><br>
-      <div class="w3-quarter">
-        <h4><b>Date and Time in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-        <p>Date & Time Canada</p>
-        <p>Fixer jihjfjkjfkhdhofivl</p>
-        <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-        <p>Fixer jihjfjkjfkhdhofivl</p>
-      </div>
-      
-      <div class="w3-quarter">
-        <img src="https://images.pexels.com/photos/3616232/pexels-photo-3616232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
-       
-      </div>
-      
-      <div class="w3-quarter">
-        <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-        <p>Date & Time Canada</p>
-        <p>Fixer jihjfjkjfkhdhofivl</p>
-        <p>Fixer fiifkjlfufoofp;efifflhhfvioviihvb</p>
-        <p>Fixer jihjfjkjfkhdhofivl</p>
-      </div>
-      
-      <div class="w3-quarter">
-        <img src="https://images.pexels.com/photos/2937623/pexels-photo-2937623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
-      
-      </div>
-      <br>
 
     <!-- Contact -->
     <div class="center-padding-62" id="contact">
