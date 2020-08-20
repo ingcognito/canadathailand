@@ -83,8 +83,8 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
       </div>
     </div>
   </div>
-  
 <br>
+      
 <!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
 <div class="w3-row"><br>
@@ -100,9 +100,10 @@ function calTime(city, offset) {
     document.getElementById("showDateThailand").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
 }
 </script> 
-<body>
-      <button type="button" onclick="calTime('Thailand','+7')">Show Date</button>
-      <p id="showDateThailand"></p>
+
+<body>  
+<button type="buttonT" onclick="calTime('Thailand','+7')">Show Date</button>
+<p id="showDateThailand"></p>
 </body>
 </div>
 
@@ -194,22 +195,77 @@ function calTime(city, offset) {
 <div class="w3-quarter">
   <h4><b>Politics in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
   <p>Constitutional Monarch and Democracy</p>
-  <button onclick="window.location.href='https://en.wikipedia.org/wiki/Politics_of_Thailand';">
-    Click Here
-  
+  <style>
+    .buttonP {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #eb5114;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonP:hover {background-color: #da5315}
+    
+    .buttonP:active {
+      background-color: #e95713;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>  
+    <button class="buttonP" onclick="window.location.href='https://en.wikipedia.org/wiki/Politics_of_Thailand';">
+        Click Here 
+      </button>
+     </body>
+
 </div>
 
 <div class="w3-quarter">
-  <img src="https://image.freepik.com/free-photo/democracy-monument-bangkok-thailand_35071-1537.jpg" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
- 
+  <img src="https://image.freepik.com/free-photo/democracy-monument-bangkok-thailand_35071-1537.jpg" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity"> 
 </div>
 
 <div class="w3-quarter">
   <h4><b>Politics in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
   <p>Full Democracy</p>
-  <button onclick="window.location.href='https://en.wikipedia.org/wiki/Politics_of_Canada';">
-    Click Here
-  
+  <style>
+    .buttonP {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #eb5114;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonP:hover {background-color: #da5315}
+    
+    .buttonP:active {
+      background-color: #e95713;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>  
+    <button class="buttonP" onclick="window.location.href='https://en.wikipedia.org/wiki/Politics_of_Canada';">
+        Click Here 
+  </button>
+     </body>
+
 </div>
 
 <div class="w3-quarter">
@@ -224,9 +280,36 @@ function calTime(city, offset) {
 <div class="w3-quarter">
     <h4><b>Population in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
     <p>Over 69 million people</p>
- <button onclick="window.location.href='https://worldpopulationreview.com/countries/thailand-population';">
-      Click Here
+    <style>
+    .buttonPop {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #3bbecf;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonPop:hover {background-color: #39b9f5}
+    
+    .buttonPop:active {
+      background-color: #40b4e9;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>  
+    <button class="buttonPop" onclick="window.location.href='https://worldpopulationreview.com/countries/thailand-population';">
+        Click Here
     </button>
+      </body>
   </div>
   
   <div class="w3-quarter">
@@ -237,9 +320,36 @@ function calTime(city, offset) {
  <div class="w3-quarter">
      <h4><b>Population in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
     <p>Over 37 million people</p>
- <button onclick="window.location.href='https://worldpopulationreview.com/countries/canada-population';">
-      Click Here
+    <style>
+      .buttonPop {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #3bbecf;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+      
+      .buttonPop:hover {background-color: #39b9f5}
+      
+      .buttonPop:active {
+        background-color: #40b4e9;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      </style>
+      </head>
+      <body>  
+      <button class="buttonPop" onclick="window.location.href='https://worldpopulationreview.com/countries/canada-population';">
+          Click Here
     </button>
+      </body>
   </div>
   
   <div class="w3-quarter">
@@ -287,6 +397,7 @@ function calTime(city, offset) {
   
 </div>
 
+
 <div class="w3-quarter">
   <img src="https://images.unsplash.com/photo-1510382960960-be18f0334b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=925&q=80" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
 </div>
@@ -329,7 +440,6 @@ function calTime(city, offset) {
 <div class="w3-quarter">
   <img src="https://images.unsplash.com/photo-1562364692-16836a8b9b08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
 </div>
-
 <br>
 
 <!-- Team Container -->
@@ -338,9 +448,36 @@ function calTime(city, offset) {
 <div class="w3-quarter">
   <h4><b>Religion in Thailand</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
   <p>The most is Buddhism</p>
-  <button onclick="window.location.href='https://en.wikipedia.org/wiki/Religion_in_Thailand';">
-    Click Here
+  <style>
+.buttonR {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #787af8;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonR:hover {background-color: #6c57e6}
+    
+    .buttonR:active {
+      background-color: #6f66c0ea;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>  
+    <button class="buttonR" onclick="window.location.href='https://en.wikipedia.org/wiki/Religion_in_Thailand';">
+        Click Here 
   </button>
+      </body>
 </div>
 
 <div class="w3-quarter">
@@ -350,9 +487,36 @@ function calTime(city, offset) {
 <div class="w3-quarter">
   <h4><b>Religion in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
   <p>The most is Christianity</p>
-  <button onclick="window.location.href='https://en.wikipedia.org/wiki/Religion_in_Canada';">
-    Click Here
+  <style>
+    .buttonR {
+          display: inline-block;
+          padding: 10px 15px;
+          font-size: 16px;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: #787af8;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 9px #999;
+        }
+        
+        .buttonR:hover {background-color: #6c57e6}
+        
+        .buttonR:active {
+          background-color: #6f66c0ea;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+        </style>
+        </head>
+        <body>  
+        <button class="buttonR" onclick="window.location.href='https://en.wikipedia.org/wiki/Religion_in_Canada';">
+            Click Here 
   </button>
+      </body>
 </div>
 
 <div class="w3-quarter">
@@ -365,18 +529,76 @@ function calTime(city, offset) {
 <div class="w3-row"><br>
 <div class="w3-quarter">
 <h4><b>Holidays in Thailand</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
-<button onclick="window.location.href='https://www.officeholidays.com/countries/thailand/2020';">
-    Click Here
-  </button>
+<p>Regulated by the government</p>
+<style>
+  .buttonH {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+        color: #fff;
+        background-color:  #f74397;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+      
+      .buttonH:hover {background-color: #f74397}
+      
+      .buttonH:active {
+        background-color: #f35899ea;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      </style>
+      </head>
+      <body>  
+      <button class="buttonH" onclick="window.location.href='https://en.wikipedia.org/wiki/Public_holidays_in_Thailand';">
+          Click Here 
+</button>
+    </body>
 </div>
 <div class="w3-quarter">
   <img src="https://images.pexels.com/photos/3183613/pexels-photo-3183613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"width="194" height="196" class="w3-circle w3-hover-opacity">
 </div>
 <div class="w3-quarter">
   <h4><b>Holidays in Canada</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
-    <button onclick="window.location.href='https://www.officeholidays.com/countries/canada';">
-        Click Here
-</div>
+  <p>Legislated at the federal or provincial and territorial levels</p>
+  <style>
+    .buttonH {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+          color: #fff;
+          background-color:  #f74397;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 9px #999;
+        }
+        
+        .buttonH:hover {background-color: #f74397}
+        
+        .buttonH:active {
+          background-color: #f35899ea;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+        </style>
+        </head>
+        <body>  
+        <button class="buttonH" onclick="window.location.href='https://en.wikipedia.org/wiki/Public_holidays_in_Canada';">
+            Click Here 
+  </button>
+      </body>
+  </div>
+
 <div class="w3-quarter">
   <img src="https://images.pexels.com/photos/756790/pexels-photo-756790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"width="194" height="196" class="w3-circle w3-hover-opacity">
 </div>
@@ -388,9 +610,38 @@ function calTime(city, offset) {
 <div class="w3-quarter">
 <h4><b>Sizes in Thailand</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
 <p>Total 198,120 sq mi</p>
-<button onclick="window.location.href='https://en.wikipedia.org/wiki/Geography_of_Thailand#Area';">
-    Click Here
-</div>
+<style>
+  .buttonSi {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color:  #3ae27aea;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+      
+      .buttonSi:hover {background-color:#05ec8c}
+      
+      .buttonSi:active {
+        background-color: #3ae27aea;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      </style>
+      </head>
+      <body>  
+      <button class="buttonSi" onclick="window.location.href='https://en.wikipedia.org/wiki/Geography_of_Thailand#Area';">
+          Click Here 
+      </button>
+      </body>
+      </div>
+
 <div class="w3-quarter">
   <img src="https://maps-thailand-th.com/img/0/map-of-thailand-area.jpg"width="194" height="196" class="w3-circle w3-hover-opacity">
 </div>
@@ -398,9 +649,38 @@ function calTime(city, offset) {
   <h4><b>Sizes in Canada</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
     <p>Total 3,855,103 sq mi</p>
     <p>The second biggest country in the world</p>
-    <button onclick="window.location.href='https://en.wikipedia.org/wiki/Geography_of_Canada';">
-        Click Here
+    <style>
+      .buttonSi {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color:  #3ae27aea;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .buttonSi:hover {background-color: #05ec8c}
+          
+          .buttonSi:active {
+            background-color: #3ae27aea;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+          </style>
+          </head>
+          <body>  
+          <button class="buttonSi" onclick="window.location.href='https://en.wikipedia.org/wiki/Geography_of_Canada';">
+              Click Here 
+            </button>
+            </body>
 </div>
+
 <div class="w3-quarter">
   <img src="http://ontheworldmap.com/canada/canada-road-map.jpg"width="194" height="196" class="w3-circle w3-hover-opacity">
 </div>
@@ -411,30 +691,244 @@ function calTime(city, offset) {
     <div class="w3-row"><br>
     <div class="w3-quarter">
       <h4><b>Agriculture in Thailand</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
-      <p>The most is Buddhism</p>
-      <button onclick="window.location.href='https://en.wikipedia.org/wiki/Religion_in_Thailand';">
-        Click Here
-      </button>
+      <p>The world's biggest rice exporter</p>
+      <style>
+        .buttonA {
+              display: inline-block;
+              padding: 10px 15px;
+              font-size: 16px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color:   #4d83f7;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+            
+            .buttonA:hover {background-color: #4d83f7}
+            
+            .buttonA:active {
+              background-color: #6595fdea;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            </style>
+            </head>
+            <body>  
+            <button class="buttonA" onclick="window.location.href='https://en.wikipedia.org/wiki/Agriculture_in_Thailand';">
+                Click Here 
+              </button>
+              </body>
     </div>
     <div class="w3-quarter">
-      <img src="https://images.pexels.com/photos/246935/pexels-photo-246935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+      <img src="https://images.pexels.com/photos/730921/ditch-sunset-hdr-meadows-730921.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
     </div>
     <div class="w3-quarter">
       <h4><b>Agriculture in Canada</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
-      <p>Christianity</p>
-      <button onclick="window.location.href='https://en.wikipedia.org/wiki/Religion_in_Canada';">
-        Click Here
-      </button>
+      <p>Grains and oilseeds is the major agricultural products</p>
+      <style>
+        .buttonA {
+              display: inline-block;
+              padding: 10px 15px;
+              font-size: 16px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color:   #4d83f7;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+            
+            .buttonA:hover {background-color: #4d83f7}
+            
+            .buttonA:active {
+              background-color: #6595fdea;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            </style>
+            </head>
+            <body>  
+            <button class="buttonA" onclick="window.location.href='https://en.wikipedia.org/wiki/Agriculture_in_Canada';">
+                Click Here 
+              </button>
+              </body>
     </div>
     <div class="w3-quarter">
-      <img src="https://images.pexels.com/photos/161281/cross-christian-religion-church-161281.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+      <img src="https://images.pexels.com/photos/2131650/pexels-photo-2131650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
     </div>
     <br>
 
-    <!-- Contact -->
-    <div class="center-padding-62" id="contact">
-      <h1 style="color:white;">Hello World</h1>
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+  <div class="w3-row"><br>
+  <div class="w3-quarter">
+    <h4><b>Sports in Thailand</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+    <p>Muay Thai kick-boxing is very popular in Thailand</p>
+    <style>
+      .buttonSp {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color:  #f7703a;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .buttonSp:hover {background-color: #f7703a}
+          
+          .buttonSp:active {
+            background-color: #f8663aea;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+          </style>
+          </head>
+          <body>  
+          <button class="buttonSp" onclick="window.location.href='https://en.wikipedia.org/wiki/Sport_in_Thailand';">
+              Click Here 
+            </button>
+            </body>
+  </div>
+  <div class="w3-quarter">
+    <img src="https://images.pexels.com/photos/4651305/pexels-photo-4651305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+  </div>
+  <div class="w3-quarter">
+    <h4><b>Sports in Canada</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+    <p>The most common sports are ice hockey and lacrosse</p>
+    <style>
+      .buttonSp {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color:  #f7703a;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .buttonSp:hover {background-color: #f7703a}
+          
+          .buttonSp:active {
+            background-color: #f8663aea;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+          </style>
+          </head>
+          <body>  
+          <button class="buttonSp" onclick="window.location.href='https://en.wikipedia.org/wiki/Sports_in_Canada';">
+              Click Here 
+            </button>
+            </body>
+  </div>
+  <div class="w3-quarter">
+    <img src="https://images.pexels.com/photos/1770650/pexels-photo-1770650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+  </div>
+  <br>
+      
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+  <div class="w3-row"><br>
+  <div class="w3-quarter">
+    <h4><b>Languages in Thailand</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+    <p>Thai is the national language of Thailand</p>
+    <style>
+      .buttonL {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color:  #bf67f1ea;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .buttonL:hover {background-color: #aa4caa}
+          
+          .buttonL:active {
+            background-color: #bf67f1ea;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+          </style>
+          </head>
+          <body>  
+          <button class="buttonL" onclick="window.location.href='https://en.wikipedia.org/wiki/Thai_language';">
+              Click Here 
+            </button>
+            </body>
+  </div>
+  <div class="w3-quarter">
+    <img src="http://www.english-room.com/signs/sign_002.jpg" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+  </div>
+  <div class="w3-quarter">
+    <h4><b>Languages in Canada</b></h4> <style="width:45%" class="w3-circle w3-hover-opacity">
+    <p>English and French are the national language of Canada</p>
+    <style>
+      .buttonL {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color:  #bf67f1ea;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+          }
+          
+          .buttonL:hover {background-color: #aa4caa}
+          
+          .buttonL:active {
+            background-color: #bf67f1ea;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+          }
+          </style>
+          </head>
+          <body>  
+          <button class="buttonL" onclick="window.location.href='https://en.wikipedia.org/wiki/Languages_of_Canada';">
+              Click Here 
+            </button>
+            </body>
+  </div>
+      
+  <div class="w3-quarter">
+    <img src="https://www.macleans.ca/wp-content/uploads/2011/10/Ottawa-stop-sign.jpg" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
+  </div>
+  <br>
+
+  
+<!-- Contact -->
+<div class="center-padding-68" id="contact">
+<h1 style="color:white;">Hello World</h1>
+<span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
     </div>
   <br>
     <form class="w3-container" action="/action_page.php" target="_blank">
