@@ -99,9 +99,33 @@ function calTime(city, offset) {
     document.getElementById("showDateThailand").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
 }
 </script> 
-
-<body>  
-<button type="buttonT" onclick="calTime('Thailand','+7')">Show Date</button>
+ 
+  <style>
+    .buttonTi {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #9d22ad;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonTi:hover {background-color: #a12d9c}
+    
+    .buttonTi:active {
+      background-color: #900faa;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+    <body>  
+<button type="buttonTi" onclick="calTime('Thailand','+7')">Show Date</button>
 <p id="showDateThailand"></p>
 </body>
 </div>
@@ -110,59 +134,7 @@ function calTime(city, offset) {
   <img src="https://images.pexels.com/photos/295884/pexels-photo-295884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
  
 </div>
-
-<div class="w3-quarter">
-  <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
-  <p>Current Date & Time </p>
-  <p> UTC-4 hours</p>
-<script>  
-        function calcTime(city, offset) {
-            d = new Date();
-            utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-            nd = new Date(utc + (3600000*offset));
-            document.getElementById("showDateThailand").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
-        }
-        </script> 
-
-<style>
-  .buttonTi {
-    display: inline-block;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #9d22ad;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  .buttonTi:hover {background-color: #a12d9c}
-  
-  .buttonTi:active {
-    background-color: #900faa;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-  </style>
-  </head>
-  <body>  
-  <button class="buttonTi" onclick="calTime('Thailand','+7')">Show Date</button>
-  <p id="showDateThailand"></p>  
-  </body>
-
-      
-    <div class="w3-quarter">
-      <img src="https://images.pexels.com/photos/355915/pexels-photo-355915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
-    </div>
-    
-      </div>
-    </div>
-    
-    <div class="w3-half">
+<div class="w3-half">
       <div class="w3-card w3-container" style="min-height:460px">
       <h4><b>Date and Time in Canada</b></h4> <alt="DT" style="width:45%" class="w3-circle w3-hover-opacity">
       <p>Current Date & Time </p>
@@ -214,15 +186,6 @@ function calTime(city, offset) {
     </body>
     </div>
     <br>
-
-     <body>
-      <button type="button" onclick="calcTime('Canada','-4')">Show Date</button>
-      <p id="showDateCanada"></p>
-</body>
-</div>
-
-<div class="w3-quarter">
-  <img src="https://images.pexels.com/photos/355915/pexels-photo-355915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="DateTime" width="194" height="196" class="w3-circle w3-hover-opacity">
 
 </div>
 <!-- Team Container -->
