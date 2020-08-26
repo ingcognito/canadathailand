@@ -5,4 +5,53 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
 </style>
 
+ <style>
+    .buttonP {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #eb5114;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonP:hover {background-color: #da5315}
+    
+    .buttonP:active {
+      background-color: #e95713;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+
+    <style>
+    .buttonP {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #eb5114;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    
+    .buttonP:hover {background-color: #da5315}
+    
+    .buttonP:active {
+      background-color: #e95713;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
 
