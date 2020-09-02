@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
 <link rel="stylesheet href="./css/main.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>🍁Canada Thailand Services 🌴</title>
+    <title>🍁Canada Thailand🌴</title>
   </head>
   <body>
     <div class="fixed-top">
@@ -23,10 +23,10 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Home</a>
-          <a class="navbar-brand" href="#">About</a>
-          <a class="navbar-brand" href="#">Services</a>
-          <a class="navbar-brand" href="#">Contact</a>
+          <a class="navbar-brand" href="./index.html">Home</a>
+          <a class="navbar-brand" href="./about.html">About</a>
+          <a class="navbar-brand" href="./services.html">Services</a>
+          <a class="navbar-brand" href="./contact.html">Contact</a>
           </form>
         </nav>
       </div>
@@ -36,8 +36,7 @@
 <div class="container">
 <h1 class="display-4">Canada Thailand Service Company</h1>  
 <p class="lead">We Specialize in Canada and Thailand Immigration.</p>
-<a class="btn btn-primary" href="signin.html" role="button">Sign in</a> 
-<a class="btn btn-secondary" href="register.html" role="button">Register</a>
+
 </div>
 </div>
  <!-- Slideshow -->
@@ -118,8 +117,8 @@
             <h5>Currency in Canada 💰 Canadian Dollar</h5>
             <div class="jumbotron">
               <div class="container">
-               <p class="lead">Convert the currency</p> <script src="./js/currency.js"></script>
-               <form class="form-inline">
+               <p class="lead">Convert the currency</p> 
+               <form class="form-inline"> 
                  <div class="form-group mb-2">
                     <input type="number" class="form-control" id="amount"/>
                  </div>
@@ -136,7 +135,8 @@
                       <option>CAD</option>
                     </select>
                   </div>     
-<button class="btn btn-primary" onclick="convertCurrency(value)">Result</button>
+                  <script src="./JS/currency.js"></script> 
+<button class="btn btn-primary" onclick="convertCurrency(event)">Result</button>
                 </form>
                 <div class="result">
                   <p>
@@ -148,11 +148,11 @@
                 </div>
               </div> 
             </div>
-            
+
           </div>
         </div>
       </div>
-
+     
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
@@ -160,7 +160,7 @@
 <h5>Currency in Thailand 💰 Baht</h5>
 <div class="jumbotron">
   <div class="container">
-   <p class="lead">Convert the currency</p> <script src="./currency.js"></script>
+   <p class="lead">Convert the currency</p>  
    <form class="form-inline">
      <div class="form-group mb-2">
         <input type="number" class="form-control" id="amount"/>
@@ -177,10 +177,11 @@
           <option>THA</option>
           <option>CAD</option>
         </select>
-      </div>     
-<button class="btn btn-primary" onclick="convertCurrency(value)">Result</button>
+      </div>    
+      <script src="./JS/thcurrency.js"></script> 
+      <button class="btn btn-primary" onclick="ConvertCurrency(Event)">Result</button>
     </form>
-    <div class="result">
+    <div class="result"> 
       <p>
         <span class="given-amount"></span> 
         <span class="base-currency"></span>
@@ -194,7 +195,7 @@
 </div>
       </div>
     </div>
-
+    
     <div class="row">
       <div class="col-sm-6">
         <div class="card">
@@ -497,38 +498,45 @@
       </div>
     </div>
 <br>
-<div class="d-inline p-2 bg-dark text-white">Contact Us</div>
-<br>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Send Message</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel">New message</h5>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-</div>
-<div class="modal-body">
-<form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h4 class="text-center">Contact Us</h4>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Send Message</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
           </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        </div>
       </div>
     </div>
+   
+    <footer class="text-center" style="padding:32px"></footer>
+      <a href="#" class="container"><i class="text-center"></i>To the top</a>
+    <script src="./JS/footer.js"></script>
   </div>
 </div>
-<br>  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

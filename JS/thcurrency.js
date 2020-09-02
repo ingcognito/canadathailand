@@ -8,7 +8,7 @@ var toShowBase = document.querySelector('.base-currency');
 var toShowSecond = document.querySelector('.second-currency');
 var toShowResult = document.querySelector('.final-result');
 
-function convertCurrency(event) {
+function ConvertCurrency(Event) {
   event.preventDefault();
   var amount = amountInput.value;
   var from = baseCurrencyInput.value;
@@ -32,6 +32,6 @@ function convertCurrency(event) {
   toShowResult.textContent = result; 
 }
 
-btn.addEventListener('click', convertCurrency);
+btn.addEventListener('click', ConvertCurrency);
 
 
