@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
 <link rel="stylesheet href="./css/main.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>🍁Canada Thailand🌴</title>
+<title>🍁Canada Thailand🌴</title>
   </head>
   <body>
     <div class="fixed-top">
@@ -83,32 +83,33 @@
     </a>
     </div>
     </div>
-
+  </div>
     <div class="row">
       <div class="col-sm-6">
-        <div class="card">
+        <div class="card"> 
           <div class="card-body">
-            <img src="https://images.pexels.com/photos/355915/pexels-photo-355915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
-            <h5>Date and Time in Canada 🕰</h5>
-            <p>Current Date & Time (UTC -4 hours)</p> <script src="./js/cantime.js"> </script> 
-            <button type="button" class="badge badge-pill badge-warning" onclick="calcTime('Canada','-4')">Show Date</button>
+<img src="https://images.pexels.com/photos/165770/pexels-photo-165770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage">
+<h5>Date and Time in Canada 🕰</h5>
+<p>Current Date & Time (UTC -4 hours)</p> <script src="./js/cantime.js"> </script> 
+<button type="button" class="btn btn-warning" onclick="calcTime('Canada','-4')">Show Date and Time</button>
             <p id="showDateCanada"></p>
           </div>
         </div>
       </div>
+
       <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-<img src="https://images.pexels.com/photos/295884/pexels-photo-295884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
+    <div class="card"> 
+    <div class="card-body">
+<img src="https://images.pexels.com/photos/191703/pexels-photo-191703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage">
 <h5>Date and Time in Thailand ⏱</h5> 
 <p>Current Date & Time (UTC +7 hours)</p> <script src="./js/thaitime.js"> </script>
-<button type="button" class="badge badge-pill badge-warning" onclick="calTime('Thailand','+7')">Show Date</button>
+      <button type="button" class="btn btn-warning" onclick="calTime('Thailand','+7')">Show Date and Time</button>
 <p id="showDateThailand"></p>
           </div>
         </div>
       </div>
     </div>
- 
+  </div> 
     <div class="row">
       <div class="col-sm-6">
         <div class="card">
@@ -124,19 +125,19 @@
                  </div>
                  <div class="form-group mx-sm-3 mb-2">
                     <select class="form-control" id="currency-1" required>
-                   <option>THA</option>
+                   <option>THB</option>
                       <option>CAD</option>
                     </select>
                   </div>
                   <div class="form-group mx-sm-3 mb-2">
-                    <label>convert to</label>
+                    <label>convert to </label>
                     <select class="form-control" id="currency-2" required>
-                      <option>THA</option>
+                      <option>THB</option>
                       <option>CAD</option>
                     </select>
-                  </div>     
-                  <script src="./JS/currency.js"></script> 
-<button class="btn btn-primary" onclick="convertCurrency(event)">Result</button>
+                  </div> 
+                  <script src="./JS/currency.js"> </script> 
+                  <button class="btn btn-info" onclick="convertCurrency(event)">Result</button>    
                 </form>
                 <div class="result">
                   <p>
@@ -146,13 +147,12 @@
                     <span class="second-currency"></span>
                   </p>
                 </div>
-              </div> 
-            </div>
-
+              </div>
+            </div>  
           </div>
         </div>
-      </div>
-     
+    </div>
+
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
@@ -160,28 +160,28 @@
 <h5>Currency in Thailand 💰 Baht</h5>
 <div class="jumbotron">
   <div class="container">
-   <p class="lead">Convert the currency</p>  
-   <form class="form-inline">
+   <p class="lead">Convert the currency</p> 
+   <form class="form-inline"> 
      <div class="form-group mb-2">
         <input type="number" class="form-control" id="amount"/>
      </div>
      <div class="form-group mx-sm-3 mb-2">
         <select class="form-control" id="currency-1" required>
-       <option>THA</option>
+       <option>THB</option>
           <option>CAD</option>
         </select>
       </div>
       <div class="form-group mx-sm-3 mb-2">
-        <label>convert to</label>
+        <label>convert to </label>
         <select class="form-control" id="currency-2" required>
-          <option>THA</option>
+          <option>THB</option>
           <option>CAD</option>
         </select>
-      </div>    
-      <script src="./JS/thcurrency.js"></script> 
-      <button class="btn btn-primary" onclick="ConvertCurrency(Event)">Result</button>
+      </div> 
+      <script src="./JS/thcurrency.js"> </script> 
+      <button class="btn btn-info" onclick="ConvertCurrency(event)">Result</button>    
     </form>
-    <div class="result"> 
+    <div class="result">
       <p>
         <span class="given-amount"></span> 
         <span class="base-currency"></span>
@@ -189,12 +189,11 @@
         <span class="second-currency"></span>
       </p>
     </div>
-  </div> 
+  </div>
+</div>  
 </div>
 </div>
 </div>
-      </div>
-    </div>
     
     <div class="row">
       <div class="col-sm-6">
@@ -283,15 +282,15 @@
         <div class="card">
           <div class="card-body">
             <img src="https://images.pexels.com/photos/161281/cross-christian-religion-church-161281.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
-            <h5>Religion in Canada 👼 </h5> <p>The most is Christianity <a href="https://en.wikipedia.org/wiki/Religion_in_Canada" class="badge badge-primary">Info</a></p>
+            <h5>Religion in Canada 👼 </h5> <p>The largest religion in Canada is Christianity, with Roman Catholics by 29% of the population. <a href="https://en.wikipedia.org/wiki/Religion_in_Canada" class="badge badge-primary"> Info</a></p>
           </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
-<img src="https://images.pexels.com/photos/3393546/pexels-photo-3393546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
-<h5>Religion in Thailand 👼 </h5> <p>The most is Buddhism <a href="https://en.wikipedia.org/wiki/Religion_in_Thailand" class="badge badge-primary">Info</a></p>
+<img src="https://images.pexels.com/photos/246935/pexels-photo-246935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
+<h5>Religion in Thailand 👼 </h5> <p>The largest religion in Thailand is Buddhism, which is respected by 95% of the population. <a href="https://en.wikipedia.org/wiki/Religion_in_Thailand" class="badge badge-primary"> Info</a></p>
           </div>
         </div>
       </div>
@@ -319,7 +318,7 @@
         <div class="card">
           <div class="card-body">
             <img src="http://ontheworldmap.com/canada/canada-road-map.jpg" class="card-img-top" alt="thimage" width="4" height="436" >
-            <h5>Size in Canada 🗺 </h5> <p>Total 3,855,103 sq mi  <a href="https://en.wikipedia.org/wiki/Geography_of_Canada" class="badge badge-success">Info</a> The second biggest country in the world </p>     
+            <h5>Size of Canada 🗺 </h5> <p>Total 3,855,103 sq mi  <a href="https://en.wikipedia.org/wiki/Geography_of_Canada" class="badge badge-success">Info</a> The second biggest country in the world </p>     
         </div>
       </div>
       </div>
@@ -327,7 +326,7 @@
         <div class="card">
           <div class="card-body">
 <img src="https://maps-thailand-th.com/img/0/map-of-thailand-area.jpg" class="card-img-top" alt="thimage" width="4" height="436" >
-<h5>Size in Thailand 🗺 </h5> <p>Total 198,120 sq mi <a href="https://en.wikipedia.org/wiki/Geography_of_Thailand#Area" class="badge badge-success">Info</a></p>
+<h5>Size of Thailand 🗺 </h5> <p>Total 198,120 sq mi <a href="https://en.wikipedia.org/wiki/Geography_of_Thailand#Area" class="badge badge-success">Info</a></p>
           </div>
         </div>
       </div>
@@ -338,7 +337,7 @@
         <div class="card">
           <div class="card-body">
             <img src="https://images.pexels.com/photos/2131650/pexels-photo-2131650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
-            <h5>Agriculture in Canada 🌲 </h5> <p>Grains and oilseeds is the major agricultural products <a href="https://en.wikipedia.org/wiki/Agriculture_in_Canada" class="badge badge-info">Info</a></p>
+            <h5>Agriculture in Canada 🌲 </h5> <p>Grains and oilseeds are the major agricultural products <a href="https://en.wikipedia.org/wiki/Agriculture_in_Canada" class="badge badge-info">Info</a></p>
           </div>
         </div>
       </div>
@@ -374,7 +373,7 @@
         <div class="card">
           <div class="card-body">
 <img src="https://www.macleans.ca/wp-content/uploads/2011/10/Ottawa-stop-sign.jpg" class="card-img-top" alt="thimage" width="4" height="436" >
-            <h5>Languages in Canada 📑 </h5> <p>English and French are the national language of Canada <a href="https://en.wikipedia.org/wiki/Languages_of_Canada" class="badge badge-warning">Info</a></p>
+            <h5>Languages in Canada 📑 </h5> <p>English and French are the national languages of Canada <a href="https://en.wikipedia.org/wiki/Languages_of_Canada" class="badge badge-warning">Info</a></p>
           </div>
         </div>
       </div>
@@ -401,7 +400,7 @@
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
-<img src="https://images.pexels.com/photos/1031698/pexels-photo-1031698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
+<img src="https://images.pexels.com/photos/708764/pexels-photo-708764.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
 <h5>Transportation in Thailand 🚗 </h5> <p>Tuk-Tuk, Motorcycle Taxi, Bus,Train, Sky Train and Subway <a href="https://en.wikipedia.org/wiki/Transport_in_Thailand" class="badge badge-success">Info</a></p>
           </div>
         </div>
@@ -412,7 +411,7 @@
         <div class="card">
           <div class="card-body">
             <img src="https://images.pexels.com/photos/1450078/pexels-photo-1450078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
-            <h5>History in Canada 💦 </h5> <p>Began in the 15th century <a href="https://en.wikipedia.org/wiki/History_of_Canada" class="badge badge-danger">Info</a></p>
+            <h5>History in Canada 💦 </h5> <p> In 1867, the Province of Canada was joined with two other British colonies of New Brunswick and Nova Scotia through Confederation, forming a self-governing entity named Canada. <a href="https://en.wikipedia.org/wiki/History_of_Canada" class="badge badge-danger">Info</a></p>
           </div>
         </div>
       </div>
@@ -420,7 +419,7 @@
         <div class="card">
           <div class="card-body">
 <img src="https://images.pexels.com/photos/236523/pexels-photo-236523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
-<h5>History in Thailand 🔫 </h5> <p>Previously known as Siam <a href="https://en.wikipedia.org/wiki/History_of_Thailand" class="badge badge-danger">Info</a></p>
+<h5>History in Thailand 🔫 </h5> <p>Thailand (previously known as Siam) has been populated ever since the dawn of civilization in Asia. There are conflicting opinions of the origins of the Thais. It presumed that about 4,500 years. <a href="https://en.wikipedia.org/wiki/History_of_Thailand" class="badge badge-danger">Info</a></p>
           </div>
         </div>
       </div>
@@ -430,15 +429,15 @@
         <div class="card">
           <div class="card-body">
             <img src="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
-            <h5>Taxes in Canada 📋 </h5> <p>Shared between the federal government and the various provincial and territorial legislatures <a href="https://turbotax.intuit.ca/tips/an-overview-of-federal-tax-rates-286" class="badge badge-warning">Info</a></p>
+            <h5>Taxes in Canada 📋 </h5> <p>In Canada, taxpayers pay income tax to the federal government and to the government of the province/territory where they reside. <a href="https://turbotax.intuit.ca/tips/an-overview-of-federal-tax-rates-286" class="badge badge-warning">Info</a></p>
           </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
-<img src="https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436" >
-<h5>Taxes in Thailand 📋 </h5> <p>Thailand’s Corporate Income Tax is 10 to 20 % of net profit <a href="https://msnagroup.com/thai-tax/" class="badge badge-warning">Info</a></p> <br>
+<img src="https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage" width="4" height="436">
+<h5>Taxes in Thailand 📋 </h5> <p>Thailand’s Corporate Income Tax is 10 to 20 % of net profit. <a href="https://msnagroup.com/thai-tax/" class="badge badge-warning">Info</a></p> <br>
           </div>
         </div>
       </div>
@@ -456,7 +455,7 @@
         <div class="card">
           <div class="card-body">
 <img src="https://image.freepik.com/free-photo/pad-thai-stir-fried-rice-noodles-with-shrimps_1339-76100.jpg" class="card-img-top" alt="thimage" width="4" height="436" >
-<h5>Food in Thailand 🍚 </h5> <p>Pad Thai is a stir-fried rice noodle dish commonly served as a street food and at most restaurants in Thailand.  <a href="https://en.wikipedia.org/wiki/Thai_cuisine" class="badge badge-primary">Info</a></p> 
+<h5>Food in Thailand 🍚 </h5> <p>Pad Thai is a stir-fried rice noodle dish served as a street food and the restaurants in Thailand.  <a href="https://en.wikipedia.org/wiki/Thai_cuisine" class="badge badge-primary">Info</a></p> 
           </div>
         </div>
       </div>
@@ -474,7 +473,7 @@
         <div class="card">
           <div class="card-body">
 <img src="https://images.unsplash.com/photo-1527161153332-99adcc6f2966?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&auto=format&fit=crop&w=1349&q=80" class="card-img-top" alt="thimage" width="4" height="436" >
-<h5>Animals in Thailand 🐘 </h5> <p>The Asian elephants are the largest animal in Thailand. <a href="https://wildlifetrip.org/animals-in-thailand/" class="badge badge-danger">Info</a></p>
+<h5>Animals in Thailand 🐘 </h5> <p>The Asian Elephant-The largest animal in Thailand. <a href="https://wildlifetrip.org/animals-in-thailand/" class="badge badge-danger">Info</a></p>
           </div>
         </div>
       </div>
@@ -484,7 +483,7 @@
         <div class="card">
           <div class="card-body">
             <img src="https://image.freepik.com/free-photo/multiethnic-group-young-cheerful-students-walking_171337-11709.jpg" class="card-img-top" alt="thimage" width="4" height="436" >
-            <h5>Education System in Canada 📚 </h5> <p>Education is compulsory up to the age of 16 or as soon as a high school diploma has been achieved. <a href="https://en.wikipedia.org/wiki/Education_in_Canada" class="badge badge-warning">Info</a></p>
+            <h5>Education System in Canada 📚 </h5> <p>Education is compulsory up to a high school diploma has been achieved. <a href="https://en.wikipedia.org/wiki/Education_in_Canada" class="badge badge-warning">Info</a></p>
           </div>
         </div>
       </div>
@@ -497,6 +496,7 @@
         </div>
       </div>
     </div>
+  </div>
 <br>
 
 <div class="jumbotron jumbotron-fluid">
@@ -537,7 +537,7 @@
     <script src="./JS/footer.js"></script>
   </div>
 </div>
-
+<div style="background-color:#b3acac;text-align:center;padding:10px;margin-top:7px;">© copyright canadathailand.com</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
