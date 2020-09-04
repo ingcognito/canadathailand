@@ -1,4 +1,4 @@
-var crrncy = {'CAD': {'CAD': 0.418, 'THA': 23.98}}
+var crrncy = {'CAD': {'THB': 0.418}, 'CAD': {'THB':23.98}}
 var btn = document.querySelector('.calculate-btn');
 var baseCurrencyInput = document.getElementById('currency-1');
 var secondCurrencyInput = document.getElementById('currency-2');
