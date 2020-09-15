@@ -32,4 +32,4 @@ function ConvertCurrency(event) {
   toShowResult.textContent = result; 
 }
 
-btn.addEventListener('click', convertCurrency);
+btn.addEventListener('click', ConvertCurrency);
