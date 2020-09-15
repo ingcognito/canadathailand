@@ -90,7 +90,15 @@
           <div class="card-body">
 <img src="https://images.pexels.com/photos/165770/pexels-photo-165770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage">
 <h5>Date and Time in Canada 🕰</h5>
-<p>Current Date & Time (UTC -4 hours)</p> <script src="./js/cantime.js"> </script> 
+<p>Current Date & Time (UTC -4 hours)</p> 
+<script>
+function calcTime(city, offset) {
+    d = new Date();
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    nd = new Date(utc + (3600000*offset));
+    document.getElementById("showDateCanada").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+}
+</script> 
 <button type="button" class="btn btn-warning" onclick="calcTime('Canada','-4')">Show Date and Time</button>
             <p id="showDateCanada"></p>
           </div>
@@ -102,7 +110,15 @@
     <div class="card-body">
 <img src="https://images.pexels.com/photos/191703/pexels-photo-191703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage">
 <h5>Date and Time in Thailand ⏱</h5> 
-<p>Current Date & Time (UTC +7 hours)</p> <script src="./js/thaitime.js"> </script>
+<p>Current Date & Time (UTC +7 hours)</p> 
+<script>
+function calTime(city, offset) {
+    d = new Date();
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    nd = new Date(utc + (3600000*offset));
+    document.getElementById("showDateThailand").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+}
+ </script>
       <button type="button" class="btn btn-warning" onclick="calTime('Thailand','+7')">Show Date and Time</button>
 <p id="showDateThailand"></p>
           </div>
