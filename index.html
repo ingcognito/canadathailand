@@ -90,7 +90,15 @@
           <div class="card-body">
 <img src="https://images.pexels.com/photos/165770/pexels-photo-165770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage">
 <h5>Date and Time in Canada 🕰</h5>
-<p>Current Date & Time (UTC -4 hours)</p> <script src="./js/cantime.js"> </script> 
+<p>Current Date & Time (UTC -4 hours)</p>
+<script>
+function calcTime(city, offset) {
+    d = new Date();
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    nd = new Date(utc + (3600000*offset));
+    document.getElementById("showDateCanada").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+}
+ </script> 
 <button type="button" class="btn btn-warning" onclick="calcTime('Canada','-4')">Show Date and Time</button>
             <p id="showDateCanada"></p>
           </div>
@@ -102,7 +110,15 @@
     <div class="card-body">
 <img src="https://images.pexels.com/photos/191703/pexels-photo-191703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="thimage">
 <h5>Date and Time in Thailand ⏱</h5> 
-<p>Current Date & Time (UTC +7 hours)</p> <script src="./js/thaitime.js"> </script>
+<p>Current Date & Time (UTC +7 hours)</p> 
+<script>
+function calTime(city, offset) {
+    d = new Date();
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    nd = new Date(utc + (3600000*offset));
+    document.getElementById("showDateThailand").innerHTML = "The local time in " + city + " is " + nd.toLocaleString();
+}
+</script>
       <button type="button" class="btn btn-warning" onclick="calTime('Thailand','+7')">Show Date and Time</button>
 <p id="showDateThailand"></p>
           </div>
@@ -110,93 +126,50 @@
       </div>
     </div>
   </div> 
-    <div class="row">
+</div>
+
+<div class="row">
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
-            <img src="https://responsive.fxempire.com/width/600/webp-lossy-70.q50/_fxempire_/2018/08/Canadian-Dollar-Notes-1-2.jpg" class="card-img-top" alt="thimage" width="4" height="436" >
-            <h5>Currency in Canada 💰 Canadian Dollar</h5>
-            <div class="jumbotron">
-              <div class="container">
-               <p class="lead">Convert the currency</p> 
-               <form class="form-inline"> 
-                 <div class="form-group mb-2">
-                    <input type="number" class="form-control" id="amount"/>
-                 </div>
-                 <div class="form-group mx-sm-3 mb-2">
-                    <select class="form-control" id="currency-1" required>
-                   <option>THB</option>
-                      <option>CAD</option>
-                    </select>
-                  </div>
-                  <div class="form-group mx-sm-3 mb-2">
-                    <label>convert to </label>
-                    <select class="form-control" id="currency-2" required>
-                      <option>THB</option>
-                      <option>CAD</option>
-                    </select>
-                  </div> 
-                  <script src="./JS/currency.js"> </script> 
-                  <button class="btn btn-info" onclick="convertCurrency(event)">Result</button>    
-                </form>
-                <div class="result">
-                  <p>
-                    <span class="given-amount"></span> 
-                    <span class="base-currency"></span>
-                    <span class="final-result"></span> 
-                    <span class="second-currency"></span>
-                  </p>
-                </div>
-              </div>
-            </div>  
+            <img src="https://responsive.fxempire.com/width/600/webp-lossy-70.q50/_fxempire_/2018/08/Canadian-Dollar-Notes-1-2.jpg" class="card-img-top" alt="thimage" width="4" height="436">  
+            <h4>Currency in Canada 💰 Canadian Dollar</h4>
+                <script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+                <script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+                <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+                <div class="jumbotron">
+                  <div class="container"> 
+                    <div id="app"> 
+            <script type="text/babel" src="./JS/currency.js"> </script>   
           </div>
         </div>
-    </div>
+      </div>
+    </div>             
+  </div>
+</div>
+       
+
+
 
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
 <img src="https://www.investasian.com/wp-content/uploads/2017/06/Best-Currency-in-Asia-It%E2%80%99s-Not-What-You-Think-1-1080x640.jpg" class="card-img-top" alt="thimage" width="4" height="436" >
-<h5>Currency in Thailand 💰 Baht</h5>
+<script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<h4>Currency in Thailand 💰 Baht</h4>
 <div class="jumbotron">
-  <div class="container">
-   <p class="lead">Convert the currency</p> 
-   <form class="form-inline"> 
-     <div class="form-group mb-2">
-        <input type="number" class="form-control" id="amount"/>
-     </div>
-     <div class="form-group mx-sm-3 mb-2">
-        <select class="form-control" id="currency-1" required>
-       <option>THB</option>
-          <option>CAD</option>
-        </select>
-      </div>
-      <div class="form-group mx-sm-3 mb-2">
-        <label>convert to </label>
-        <select class="form-control" id="currency-2" required>
-          <option>THB</option>
-          <option>CAD</option>
-        </select>
-      </div> 
-      <script src="./JS/thcurrency.js"> 
-      </script> 
-      <button class="btn btn-info" onclick="ConvertCurrency(event)">Result</button>    
-    </form>
-    <div class="result">
-      <p>
-        <span class="given-amount"></span> 
-        <span class="base-currency"></span>
-        <span class="final-result"></span> 
-        <span class="second-currency"></span>
-      </p>
-    </div>
-  </div>
-</div>  
+  <div class="container"> 
+    <div id="app1"> 
+<script type="text/babel" src="./JS/thcurrency.js"> </script> 
 </div>
 </div>
 </div>
-    </div>
-    
+</div>             
+</div>
+</div>
+</div> 
     <div class="row">
       <div class="col-sm-6">
         <div class="card">
